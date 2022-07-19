@@ -36,9 +36,9 @@ whitespaceBreak: false
 
 console.log(color('[ STATUS ]', 'cyan'), color('Bot Online', 'yellow'))
 console.log(color('[ INFO ]', 'cyan'), color(`Informasi Owner`, 'yellow'))
-console.log(color('Instagram :', 'cyan'), color(`@FauziTioX`, 'yellow'))
+console.log(color('Instagram :', 'cyan'), color(`@KirBotz`, 'yellow'))
 console.log(color('Github :', 'cyan'), color(`KirBotz`, 'yellow'))
-console.log(color('Wangsap :', 'cyan'), color(`085791677204`, 'yellow'))
+console.log(color('Wangsap :', 'cyan'), color(`087705048235`, 'yellow'))
 
 sock.ws.on('CB:Blocklist', json => {
 		if (blocked.length > 2) return
