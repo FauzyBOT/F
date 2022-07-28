@@ -702,7 +702,7 @@ $ [ EXE ]
 let btn = [{
 urlButton: {
 displayText: "Group Bot",
-url: "https://chat.whatsapp.com/FRAGlSbHZul5n3gBHjdz8g",
+url: "https://chat.whatsapp.com/Jvo3Af8sJvS43taGJ74lV9",
 }
 },
 { 
