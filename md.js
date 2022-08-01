@@ -256,7 +256,8 @@ orderMessage: {
 itemCount: 99999999,
 status: 1,
 surface: 1,
-message: 'FαυȥყRêålz',
+message: 'FαυȥყRêålz`𐁘'
+',
 orderTitle: '999999999', 
 sellerJid: `0@s.whatsapp.net` 
 }
@@ -272,7 +273,8 @@ participant: `0@s.whatsapp.net`,
 message: { 
 "imageMessage": { 
 "mimetype": "image/jpeg", 
-"caption": `FαυȥყRêålz`, 
+"caption": `FαυȥყRêålz`𐁘
+`, 
 "jpegThumbnail": ppnyauser
 }
 }
@@ -437,8 +439,8 @@ contextInfo: {
 "mediaType": 2, 
 "thumbnail": ktedh,
 "previewType": "VIDEO",
-"mediaUrl": 'https://chat.whatsapp.com/FRAGlSbHZul5n3gBHjdz8g',
-"sourceUrl": 'https://chat.whatsapp.com/FRAGlSbHZul5n3gBHjdz8g'
+"mediaUrl": 'https://chat.whatsapp.com/J2t1evQEFZZ6FmavPu2SZN',
+"sourceUrl": 'https://chat.whatsapp.com/J2t1evQEFZZ6FmavPu2SZN'
 }}
 }
 sock.sendMessage(m.chat, buttonMessaage, { quoted: {
