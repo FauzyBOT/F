@@ -273,7 +273,7 @@ participant: `0@s.whatsapp.net`,
 message: { 
 "imageMessage": { 
 "mimetype": "image/jpeg", 
-"caption": `FαυȥყRêålz`𐁘
+"caption": `FαυȥყRêålz
 `, 
 "jpegThumbnail": ppnyauser
 }
