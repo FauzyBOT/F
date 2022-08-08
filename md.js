@@ -228,8 +228,8 @@ const rkrk = await reSize(tytyd, 200, 200)
         "mediaType": 2, 
         "thumbnail": ppnyauser,
         "previewType": "VIDEO",
-        "mediaUrl": 'https://youtu.be/ZXj-axRW_Ew',
-        "sourceUrl": 'https://youtu.be/ZXj-axRW_Ew'}}},
+        "mediaUrl": 'https://youtu.be/b0CCKgVEhlk',
+        "sourceUrl": 'https://youtu.be/b0CCKgVEhlk'}}},
         { quoted: m })
         }
         
@@ -256,7 +256,7 @@ orderMessage: {
 itemCount: 99999999,
 status: 1,
 surface: 1,
-message: 'FαυȥყRêålz', 
+message: 'FauziRealz',
 orderTitle: '999999999', 
 sellerJid: `0@s.whatsapp.net` 
 }
@@ -272,8 +272,7 @@ participant: `0@s.whatsapp.net`,
 message: { 
 "imageMessage": { 
 "mimetype": "image/jpeg", 
-"caption": `FαυȥყRêålz
-`, 
+"caption": `Kok Fc Bang`, 
 "jpegThumbnail": ppnyauser
 }
 }
@@ -376,10 +375,10 @@ async function textpro(url, text) {
 const ktedh = await reSize(ppnyauser, 200, 200)
 
 async function replyReg(teks) {
-const buttonsDefault = [{ quickReplyButton: { displayText: ` ꪶ VERIFY ꫂ `, id: `$ verify` } }]                 
+const buttonsDefault = [{ quickReplyButton: { displayText: ` ꪶ VERIFY ꫂ `, id: `${prefix}verify` } }]                 
 const buttonMessage = { 
 text: teks, 
-footer: "Creator FαυȥყRêålz ꪶ𖣂ꫂ", 
+footer: "Creator FauziRealz ꪶ𖣂ꫂ", 
 templateButtons: buttonsDefault, 
 image: {url: ppnyauser}                                   
 }
@@ -392,7 +391,7 @@ _registered.push(sender)
 fs.writeFileSync('./command/Database/registered.json', JSON.stringify(_registered))
 addRegisteredUser(sender, serialUser)
 var button = [
-{ quickReplyButton: { displayText: `Menu`, id: `$ menu` } }
+{ quickReplyButton: { displayText: `Menu`, id: `${prefix}menu` } }
 ]
 var anj = `「 *PENDAFTARAN USER* 」
 *Terimakasih Sudah Mendaftarkan Diri Dalam Database Bot WhatsApp*
@@ -401,7 +400,7 @@ var anj = `「 *PENDAFTARAN USER* 」
 *🌹 API :* +${sender.split('@')[0]}
 *🌹 Serial:* ${serialUser}
 *🌹 Total:* ${_registered.length} Pengguna`
-sock.sendMessage(from, { caption: anj, location: { jpegThumbnail: ktedh }, templateButtons: button, footer: `Creator FαυȥყRêålz`, mentions: [m.sender] })
+sock.sendMessage(from, { caption: anj, location: { jpegThumbnail: ktedh }, templateButtons: button, footer: `Creator FauziRealz`, mentions: [m.sender] })
 .catch ((err) => reply(err))
 }
 
@@ -415,13 +414,13 @@ const botzkir = "6285791677204@s.whatsapp.net"
 var rndm = ['pdf','zip','vnd.openxmlformats-officedocument.presentationml.presentation','vnd.openxmlformats-officedocument.spreadsheetml.sheet','vnd.openxmlformats-officedocument.wordprocessingml.document']
 var bykir = rndm[Math.floor(Math.random() * rndm.length)]
 mbc = `Hai Kak @${sender.split("@")[0]} 
-Saya FαυȥყBOTZ - MD Saya Disini Ingin Membantu Kalian Membuat Sticker Download Video/Lagu Youtube, Tiktok Dll.`
+Saya FauziRealz Saya Disini Ingin Membantu Kalian Membuat Sticker Download Video/Lagu Youtube, Tiktok Dll.`
 let buttoons = [
-{buttonId: `$ allmenu`, buttonText: {displayText: 'All Menu'}, type: 1}
+{buttonId: `${prefix}allmenu`, buttonText: {displayText: 'All Menu'}, type: 1}
 ]
 let buttonMessaage = {
 document: ktedh, 
-fileName: `Bot By FαυȥყRêålz`, 
+fileName: `Bot By FauziRealz`, 
 mimetype: `application/${bykir}`,
 jpegThumbnail: ktedh,
 caption: mbc,
@@ -438,8 +437,8 @@ contextInfo: {
 "mediaType": 2, 
 "thumbnail": ktedh,
 "previewType": "VIDEO",
-"mediaUrl": 'https://chat.whatsapp.com/J2t1evQEFZZ6FmavPu2SZN',
-"sourceUrl": 'https://chat.whatsapp.com/J2t1evQEFZZ6FmavPu2SZN'
+"mediaUrl": 'https://chat.whatsapp.com/kepoanjing',
+"sourceUrl": 'https://chat.whatsapp.com/kepoanjing'
 }}
 }
 sock.sendMessage(m.chat, buttonMessaage, { quoted: {
@@ -453,7 +452,7 @@ orderMessage: {
 itemCount: 99999999,
 status: 1,
 surface: 1,
-message: 'FαυȥყRêålz',
+message: 'FauziRealz',
 orderTitle: '999999999', 
 sellerJid: `0@s.whatsapp.net` 
 }
@@ -499,7 +498,7 @@ break
 case 'ghstalk':{
 if (!isRegistered) return replyReg(api.verif)
 if (isBan) return reply(api.ban)
-if (!q) return reply(`Contoh ${prefix+command} FαυȥყRêålzzMD`)
+if (!q) return reply(`Contoh ${prefix+command} FauziRealzzMD`)
 hw = await fetchJson(`https://api.github.com/users/${q}`)
 sock.sendMessage(m.chat, { image: { url: hw.avatar_url }, caption: 
 `*/ Stalking Github \\*
@@ -557,6 +556,7 @@ Latest Publish Time : ${eha.latestPublishTime}`)
 }
 addCmd(command.slice(0), 1, commund)
 break
+
 case 'allmenu':{
 if (!isRegistered) return replyReg(api.verif)
 if (isBan) return reply(api.ban)
@@ -569,137 +569,47 @@ Jam : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')} WIB
 Tanggal : ${tanggal(new Date())}
 Total : ${_registered.length} User
 
-*/Owner*
-$ [ EXE ]
-> [ EVAL ]
-< [ EVAL2 ]
-=> [ ASYNC ]
-☻ public
-☻ self
-☻ out
-☻ setppbot 'panjang'
-☻ ban add 628××××××
-☻ ban del 628××××××
-☻ addowner 628×××××
-☻ delowner 628×××××
-☻ listban
-☻ getcase
-☻ bcall
-☻ join
-☻ creategc
-☻ bugfc
-☻ sendbugcatalogpc 6285791677204
-☻ bugpc2 6285791677204|9|9
-☻ sendbug 6285791677204
-☻ bugpc 6285791677204|9|9s
-☻ buggc 97455446178-1461236988@g.us|9|9s
+*/MENU*
 
-*/Other*
-☻ owner
-☻ dashboard
-☻ report
-☻ sticker
-☻ toimg
-☻ quotesanime
+~OWNERR
+~OTHER
+~ISLAMI
+~STALKER
+~DOWNLOADER
+~GROUP
+~VIDEO
+~TEXTPRO`
+let btn = [{
+urlButton: {
+displayText: "Instagram",
+url: "https://instagram.com/fauzitio_91<",
+}
+},
+{ 
+quickReplyButton: { 
+displayText: `Owner`, 
+id: `${prefix}owner` } },
+{ 
+quickReplyButton: { 
+displayText: `Dashboard`, 
+id: `${prefix}dashboard` } }
+]
+sock.send5ButLoc(m.chat, memegnu, `Creator FauziRealz`, tod, btn)
+}
+addCmd(command.slice(0), 1, commund)
+break
 
-*/Islami*
-☻ asmaulhusna
-☻ bacaanshalat
-☻ niatsholat
-☻ jadwalsholat
-☻ listsurah
-☻ kisahnabi
+case 'ownerr'
+if (!isRegistered) return replyReg(api.verif)
+if (isBan) return reply(api.ban)
+tod = await reSize(ppnyauser, 200, 200)
+memegnu = `*Hai Kak* ${pushname}
 
-*/Stalker*
-☻ ffstalk 1798408813
-☻ ghstalk FauziTioX
-☻ igstalk fauzitio_91
-☻ npmstalk @adiwajshing/baileys
-
-*/Downloader*
-☻ play
-☻ ytmp4
-☻ ytmp3
-☻ tiktoknowm
-☻ tiktokaudio
-
-*/Group*
-☻ listgc
-☻ antilink on
-☻ antilink off
-☻ promote @628×××××
-☻ demote @628××××××
-☻ add 628×××××
-☻ kick @628××××
-☻ tagall teks
-☻ hidetag teks
-
-*/Video*
-☻ hentai
-☻ porno
-☻ asupan
-☻ bocil
-☻ rikagusriani
-
-*/Text Pro*
-☻ candy teks
-☻ christmas teks
-☻ 3dchristmas teks
-☻ sparklechristmas teks
-☻ deepsea teks
-☻ scifi teks
-☻ rainbow teks
-☻ waterpipe teks
-☻ spooky teks
-☻ pencil teks
-☻ circuit teks
-☻ discovery teks
-☻ metalic teks
-☻ fiction teks
-☻ demon teks
-☻ transformer teks
-☻ berry teks
-☻ thunder teks
-☻ magma teks
-☻ 3dstone teks
-☻ neonlight teks
-☻ glitch teks
-☻ harrypotter teks
-☻ brokenglass teks
-☻ papercut teks
-☻ watercolor teks
-☻ multicolor teks
-☻ neondevil teks
-☻ underwater teks
-☻ graffitibike teks
-☻ snow teks
-☻ cloud teks
-☻ honey teks
-☻ ice teks
-☻ fruitjuice teks
-☻ biscuit teks
-☻ wood teks
-☻ chocolate teks
-☻ strawberry teks
-☻ matrix teks
-☻ blood teks
-☻ dropwater teks
-☻ toxic teks
-☻ lava teks
-☻ rock teks
-☻ bloodglas teks
-☻ hallowen teks
-☻ darkgold teks
-☻ joker teks
-☻ wicker teks
-☻ firework teks
-☻ skeleton teks
-☻ blackpink teks
-☻ sand teks
-☻ glue teks
-☻ 1917 teks
-☻ leaves teks
-☻ stoneeffect teks`
+Runtime : ${runtime(process.uptime())}
+Speed : ${latensi.toFixed(4)} _Detik_
+Jam : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')} WIB
+Tanggal : ${tanggal(new Date())}
+Total : ${_registered.length} User`
 let btn = [{
 urlButton: {
 displayText: "Group Bot",
@@ -709,16 +619,51 @@ url: "https://chat.whatsapp.com/J2t1evQEFZZ6FmavPu2SZN",
 { 
 quickReplyButton: { 
 displayText: `Owner`, 
-id: `$ owner` } },
+id: `${prefix}owner` } },
 { 
 quickReplyButton: { 
 displayText: `Dashboard`, 
-id: `$ dashboard` } }
+id: `${prefix}dashboard` } }
 ]
-sock.send5ButLoc(m.chat, memegnu, `Creator FαυȥყRêålz`, tod, btn)
+sock.send5ButLoc(m.chat, memegnu, `
+$ [ EXE ]
+> [ EVAL ]
+< [ EVAL2 ]
+=> [ ASYNC ]
+${prefix}public
+${prefix}self
+${prefix}out
+${prefix}setppbot 'panjang'
+${prefix}ban add 628××××××
+${prefix}ban del 628××××××
+${prefix}addowner 628×××××
+${prefix}delowner 628×××××
+${prefix}listban
+${prefix}getcase
+${prefix}bcall
+${prefix}join
+${prefix}creategc
+${prefix}bugfc
+${prefix}sendbugcatalogpc 62×××
+${prefix}bugpc2 62×××|9|9
+${prefix}bugpc 62×××|9|9s
+${prefix}buggc 97455446178-1461236988@g.us|9|9s
+
+© FauziRealz`, tod, btn)
 }
 addCmd(command.slice(0), 1, commund)
 break
+
+
+
+
+
+
+
+
+
+
+
 case 'kisahnabi':{
 if (!q) return reply(`Contoh ${prefix+command} adam`)
 dsh = await fetchJson(`https://kirbotz-api.herokuapp.com/api/kisahnabi?nabi=${q}&apikey=${kirkey}`)
@@ -892,7 +837,7 @@ var catalog = generateWAMessageFromContent(num, proto.Message.fromObject({
 sock.relayMessage(num, catalog.message, { messageId: catalog.key.id })
 await sleep(ms(waktu))
 }
-reply(`Bug By FαυȥყRêålz`)
+reply(`Bug By FauziRealz x KirBotz`)
 }
 break
 case 'bugpc2': {
@@ -921,7 +866,7 @@ num = q.split('|')[0]+'@s.whatsapp.net'
 jumlah = q.split('|')[1]
 waktu = q.split('|')[2]
 for (let i = 0; i < jumlah; i++) {
-sock.sendMessage(num, { text: 'FαυȥყRêålz' }, { quoted: lep})
+sock.sendMessage(num, { text: 'FauziRealz' }, { quoted: lep})
 await sleep(ms(waktu))
 }
 tek = `Success Send Bug To: ${num}\nAmount Spam: ${jumlah}\nTimer: ${waktu}`
@@ -938,7 +883,7 @@ num = q.split('|')[0]
 jumlah = q.split('|')[1]
 waktu = q.split('|')[2]
 for (let i = 0; i < jumlah; i++) {
-sock.sendMessage(num, { text: 'Halo Guys Aku FαυȥყRêålz Kang Bug' }, { quoted: lep})
+sock.sendMessage(num, { text: 'Halo Guys Aku FauziRealz Kang Bug' }, { quoted: lep})
 await sleep(ms(waktu))
 }
 tekteka = `Success Send Bug To: ${num}\nAmount Spam: ${jumlah}\nTimer: ${waktu}`
@@ -952,8 +897,8 @@ if (isBan) return reply(api.ban)
 if (!isCreator) return reply(api.owner)
 if (!q) return reply(`Contoh\n${prefix+command} 628×××××`)
 let nonye = [`${q}`]
-teks = `*FαυȥყRêålz Hard LeveL*`
-teks1 = `\nFαυȥყRêålz`
+teks = `*FauziRealz Hard LeveL*`
+teks1 = `\nFauziRealz`
 for (let i of nonye) {
 sock.sendMessage(i + "@s.whatsapp.net", {text: teks + teks1, mentions:[m.sender]}, {quoted:lep})
 }
@@ -966,7 +911,7 @@ if (!isRegistered) return replyReg(api.verif)
 if (isBan) return reply(api.ban)
 if (!isCreator) return reply(api.owner)
 if (!m.isGroup) return reply(api.group)
-ydd = `FαυȥყRêålz`
+ydd = `FauziRealz`
 sock.sendMessage(from, {text:ydd},{quoted: { 
 key: { 
 fromMe: false, 
@@ -976,7 +921,7 @@ participant: `0@s.whatsapp.net`,
 message: { 
 "imageMessage": { 
 "mimetype": "image/jpeg", 
-"caption": `FαυȥყRêålz`, 
+"caption": `Kok Fc Bang`, 
 "jpegThumbnail": ppnyauser
 }
 }
@@ -1003,7 +948,7 @@ case 'firework': case 'skeleton': case 'blackpink': case 'sand': case 'glue': ca
 case 'stoneeffect': {
 if (!isRegistered) return replyReg(api.verif)
 if (isBan) return reply(api.ban)
-if (!q) return reply(`Example : ${prefix + command} FαυȥყRêålz`) 
+if (!q) return reply(`Example : ${prefix + command} FauziRealz`) 
 reply(api.wait)
 let link
 if (/candy/.test(command)) link = 'https://textpro.me/create-christmas-candy-cane-text-effect-1056.html'
@@ -1170,7 +1115,7 @@ if (isBan) return reply(api.ban)
 if (!isCreator) return reply(api.owner)
 if (!args[0]) return reply("Mau ngambil case apa?")
 try {
-reply(`// FαυȥყRêålz\n` + 'case ' + `'${args[0]}'` + fs.readFileSync('./command/md.js').toString().split(`case '${args[0]}'`)[1].split(turbrek)[0] + turbrek)
+reply(`// FauziRealz\n` + 'case ' + `'${args[0]}'` + fs.readFileSync('./command/md.js').toString().split(`case '${args[0]}'`)[1].split(turbrek)[0] + turbrek)
 } catch {
 reply("Case Tidak Ditemukan")
 }
@@ -1259,7 +1204,7 @@ rows: listBloxk
 
 const listMessage = {
 text: teskd,
-footer: "_Creator FαυȥყRêålz_",
+footer: "_Creator FauziRealz_",
 title: "     「 List Participants Blockir 」",
 buttonText: "List Blockir",
 mentions: await sock.parseMention(teskd),
@@ -1335,7 +1280,7 @@ let buttonns = [
 { buttonId: '.antionce on', buttonText: { displayText: 'On' }, type: 1 },
 { buttonId: '.antionce off', buttonText: { displayText: 'Off' }, type: 1 }
 ]
-await sock.sendButtonText(m.chat, buttonns, `Mode Antionce`, `_Creator FαυȥყRêålz_`, m)
+await sock.sendButtonText(m.chat, buttonns, `Mode Antionce`, `_Creator FauziRealz_`, m)
 }
 addCmd(command.slice(0), 1, commund)
 break
@@ -1358,7 +1303,7 @@ let buttons = [
 { buttonId: '.antilink on', buttonText: { displayText: 'On' }, type: 1 },
 { buttonId: '.antilink off', buttonText: { displayText: 'Off' }, type: 1 }
 ]
-await sock.sendButtonText(m.chat, buttons, `Mode Antilink`, `_Creator FαυȥყRêålz_`, m)
+await sock.sendButtonText(m.chat, buttons, `Mode Antilink`, `_Creator FauziRealz_`, m)
 }
 addCmd(command.slice(0), 1, commund)
 break
@@ -1425,8 +1370,8 @@ ngen = `
 🗣️ Author : ${anu.author.name}
 🧑‍ Channel : ${anu.author.url}`
 let buttonse = [
-{buttonId: `$ ytmp4 ${anu.url}`, buttonText: {displayText: `Video`}, type: 1},
-{buttonId: `$ ytmp3 ${anu.url}`, buttonText: {displayText: `Audio`}, type: 1}
+{buttonId: `${prefix}ytmp4 ${anu.url}`, buttonText: {displayText: `Video`}, type: 1},
+{buttonId: `${prefix}ytmp3 ${anu.url}`, buttonText: {displayText: `Audio`}, type: 1}
 ]
 let buttonMessages = {
 image: eek, 
@@ -1445,8 +1390,8 @@ contextInfo: {
 "mediaType": 2, 
 "thumbnail": ppnyauser,
 "previewType": "VIDEO",
-"mediaUrl": 'https://youtu.be/ZXj-axRW_Ew',
-"sourceUrl": 'https://chat.whatsapp.com/FRAGlSbHZul5n3gBHjdz8g'
+"mediaUrl": 'https://youtu.be/b0CCKgVEhlk',
+"sourceUrl": 'https://chat.whatsapp.com/kepoanjing'
 }}
 }
 sock.sendMessage(m.chat, buttonMessages, { quoted: {
@@ -1460,7 +1405,7 @@ orderMessage: {
 itemCount: 99999999,
 status: 1,
 surface: 1,
-message: 'FαυȥყRêålz',
+message: 'FauziRealz',
 orderTitle: '999999999', 
 sellerJid: `0@s.whatsapp.net` 
 }
@@ -1484,8 +1429,8 @@ sock.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4',
 "mediaType": 2, 
 "thumbnail": ppnyauser,
 "previewType": "VIDEO",
-"mediaUrl": 'https://youtu.be/ZXj-axRW_Ew',
-"sourceUrl": 'https://chat.whatsapp.com/FRAGlSbHZul5n3gBHjdz8g'
+"mediaUrl": 'https://youtu.be/b0CCKgVEhlk',
+"sourceUrl": 'https://chat.whatsapp.com/kepoanjing'
 }}}, { quoted: m })
 }
 addCmd(command.slice(0), 1, commund)
@@ -1507,8 +1452,8 @@ sock.sendMessage(m.chat, { audio: { url: media.dl_link }, mimetype: 'audio/mp4',
 "mediaType": 2, 
 "thumbnail": ppnyauser,
 "previewType": "VIDEO",
-"mediaUrl": 'https://youtu.be/ZXj-axRW_Ew',
-"sourceUrl": 'https://chat.whatsapp.com/FRAGlSbHZul5n3gBHjdz8g'
+"mediaUrl": 'https://youtu.be/b0CCKgVEhlk',
+"sourceUrl": 'https://chat.whatsapp.com/kepoanjing'
 }}}, { quoted: m })
 }
 addCmd(command.slice(0), 1, commund)
@@ -1524,7 +1469,7 @@ reply(api.wait)
 owned = '6285791677204'
 mbc = `Nih Kak @${sender.split("@")[0]} `
 let buttons = [
-{buttonId: `$ tiktokaudio ${q}`, buttonText: {displayText: 'Audio'}, type: 1}
+{buttonId: `${prefix}tiktokaudio ${q}`, buttonText: {displayText: 'Audio'}, type: 1}
 ]
 let buttonMessage = {
 video: krt, 
@@ -1543,8 +1488,8 @@ contextInfo: {
 "mediaType": 2, 
 "thumbnail": ppnyauser,
 "previewType": "VIDEO",
-"mediaUrl": 'https://youtu.be/ZXj-axRW_Ew',
-"sourceUrl": 'https://chat.whatsapp.com/FRAGlSbHZul5n3gBHjdz8g'
+"mediaUrl": 'https://youtu.be/b0CCKgVEhlk',
+"sourceUrl": 'https://chat.whatsapp.com/kepoanjing'
 }}
 }
 sock.sendMessage(m.chat, buttonMessage, { quoted: {
@@ -1558,7 +1503,7 @@ orderMessage: {
 itemCount: 99999999,
 status: 1,
 surface: 1,
-message: 'FαυȥყRêålz',
+message: 'FauziRealz',
 orderTitle: '999999999', 
 sellerJid: `0@s.whatsapp.net` 
 }
@@ -1578,12 +1523,12 @@ ${krt}`)
 addCmd(command.slice(0), 1, commund)
 break
 case 'quotesanime': case 'quoteanime': {
-if (!isRegistered) returnreplyReg(api.verif)
+if (!isRegistered) return replyReg(api.verif)
 if (isBan) return reply(api.ban)
 anuds = await quotesanime()
 result = anuds[Math.floor(Math.random(), anuds.length)]
 let buttons = [
-{buttonId: `$ quotesanime`, buttonText: {displayText: 'Next'}, type: 1}
+{buttonId: `${prefix}quotesanime`, buttonText: {displayText: 'Next'}, type: 1}
 ]
 let buttonMessage = {
 text: `~_${result.quotes}_\n\nBy '${result.karakter}', ${result.anime}\n\n- ${result.up_at}`,
