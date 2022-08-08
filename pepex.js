@@ -36,7 +36,7 @@ whitespaceBreak: false
 
 console.log(color('[ STATUS ]', 'cyan'), color('Bot Online', 'yellow'))
 console.log(color('[ INFO ]', 'cyan'), color(`Informasi Owner`, 'yellow'))
-console.log(color('Instagram :', 'cyan'), color(`@KirBotz`, 'yellow'))
+console.log(color('Instagram :', 'cyan'), color(`@kirbotz`, 'yellow'))
 console.log(color('Github :', 'cyan'), color(`KirBotz`, 'yellow'))
 console.log(color('Wangsap :', 'cyan'), color(`087705048235`, 'yellow'))
 
